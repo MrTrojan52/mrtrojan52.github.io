@@ -7,75 +7,107 @@ html, body {
 }
 
 body {
-  font-family: 'Lato', sans-serif;
-  background-image: url('https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-3/background.jpg');
+  
+  background-image: url('../img/background_main.jpg');
   background-position: center top;
   background-size: cover;
   margin: 0;
 }
 
-.page-title {
-  text-align: center;
-  font-weight: 100;
+@font-face {
+  font-family: 'Pirou';
+  src: url('../fonts/Pirou.ttf');
 }
 
-.page-description {
-  border: 1px solid #000;
-  text-align: center;
-  padding: 30px;
+@font-face {
+  font-family: 'Chedwig';
+  src: url('../fonts/Chedwig.otf');
 }
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.gallery-item {
-  margin: 20px;
-  border: 5px solid #FFF;
-}
-
-.gallery-item .thumbnail {
-
-}
-
 /* FOOTER NAVIGATION */
+footer{
+  font-family: 'Chedwig';
+  text-align: center;
+  color: rgb(197,197,197);
+  font-size: 10;
+}
+
+.hat {
+  height: 350px;
+  background-image: url('../img/hat.jpg');
+  background-position: center top;
+  background-size: 100% 100%;
+}
 
 nav {
-  background-color: #FFF;
+  background-color: black;
+  height: 40px;
 }
 
 nav li {
-  margin: 0;
-  padding: 0 10px;
-  display: inline;
+  margin: 0px;
+  padding: 0px 0px;
+  display: inline-block;
 }
 
+nav a:hover {
+  color: rgb(255,255,255);
+}
 nav ul {
-  display: inline;
-}
-
-.contact-btn {
-	float: right;
-}
-
-.contact-btn a {
-  margin-right: 30px;
-  padding: 8px 18px;
-  border: 1px solid #204156;
-
-}
-
-.contact-btn a:active {
-  position: relative;
-  bottom: 2px;
+  display: inline-block;
 }
 
 nav a {
-  height: 60px;
-  line-height: 60px;
-  color: #204156;
+  
+  font-family: 'Chedwig';
+  font-size: 15;
+  color: rgb(197,197,197);
   text-decoration: none;
+}
+
+
+
+.small_img IMG{
+    
+    height: 255;
+    width: 100%;
+}
+
+
+
+
+.large_img IMG{
+    height: 510;
+    width: 100%;
+    
+}
+
+
+
+.first_images .col-md-3 {
+    padding-right: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+}
+.first_images>.col-md-3:first-child {
+    padding-left: 15px;
+}
+
+
+
+.first_images .col-md-6 {
+    padding-left: 0px;
+}
+
+.second_images .col-md-6 {
+    padding-right: 0px;
+}
+
+.second_images .col-md-3 {
+    padding-right: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+}
+
+.second_images>.col-md-3:last-child {
+    padding-right: 15px;
 }
