@@ -255,3 +255,7 @@ nav a {
 .spacer {
     height: 100px;
 }
+
+.hover_img IMG:hover{
+    opacity: 0.85; 
+}
