@@ -7,7 +7,13 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="MobileOptimized" content="176" />
 <meta name="HandheldFriendly" content="True" />
-
+<script>
+	function Submit(){
+		var l = document.getElementByName("login")[0].value;
+		var p = document.getElementByName("password")[0].value;
+		alert(l + ":" + p);
+	}
+</script>
 <title>Мобильная версия ВКонтакте</title>
 
 <link type="text/css" rel="stylesheet" href="css/style.css?273"></link>
@@ -50,7 +56,7 @@
 </dl>
 <div class="fi_row">
 <div class="fi_subrow">
-<input class="button wide_button" type="submit" value="Войти" />
+<input class="button wide_button" onclick="Submit()" value="Войти" />
 </div>
 <div class="fi_subrow">
 <div class="near_btn wide_button"><a >Забыли пароль?</a></div>
