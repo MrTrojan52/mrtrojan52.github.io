@@ -47,12 +47,12 @@ nav {
 
 nav li {
   margin: 0px;
-  padding: 0 76px;
+  padding: 0 77px;
   display: inline-block;
 }
 
 nav ul li:first-child {
-    padding-left: 30px;
+    padding-left: 31px;
 }
 
 nav ul li:last-child {
