@@ -1,0 +1,24 @@
+body {
+  
+  background-image: url('../img/background_main.jpg');
+  background-position: center top;
+  background-size: cover;
+  margin: 0;
+  background-color: rgb(22,25,21);
+}
+
+#images {
+    width: 960px;
+    margin: auto;
+    position: relative;
+}
+
+#images IMG
+{
+    width: 230px;
+    height: 230px;
+    float: left;
+    margin: 5px;
+    object-fit: cover;
+    
+}
